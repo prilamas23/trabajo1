@@ -1,0 +1,43 @@
+.app {
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "contenido"
+        "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+}
+
+.encabezado {
+    align-items: center;
+    display: flex;
+    grid-area: header;
+    padding: 0 2rem;
+    background: #f1f1f1;
+  
+}
+
+.menu__link {
+    color: #333333;
+    padding: .5rem 1rem;
+}
+
+.menu__link:hover , .menu__link.activo {
+    border-bottom: 2 px solid #0073e6;
+}
+
+.contenido {
+    grid-area: contenido;
+    padding: 0 2rem;
+}
+
+.rodapie { 
+    
+    grid-area: footer;
+    background: #fdfdfd;
+    color: #333333;
+    padding: 1rem;
+    text-align: center;
+}
